@@ -6,12 +6,15 @@ type Props = {};
 
 const Navbar = (props: Props) => {
   return (
-    <nav className="fixed flex w-full h-20 gap-6 px-4 text-white align-center bg-neutral-900 ">
+    <nav className="sticky flex w-full h-20 gap-6 px-4 text-white align-center bg-neutral-900 ">
       <a className="flex w-200 align-start" href="/">
         <Image src={disneyLogo} alt="disney+ logo" width="100%" />
       </a>
       <div className="flex items-center ">
-        <a className="flex flex-row justify-start gap-3 " href="/Home">
+        <a
+          className="flex flex-row justify-start gap-3 ease-in-out hover:underline hover:origin-left "
+          href="/"
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className="w-5 h-5"
@@ -20,11 +23,14 @@ const Navbar = (props: Props) => {
           >
             <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z" />
           </svg>
-          <p>Home</p>
+          <p>HOME</p>
         </a>
       </div>
       <div className="flex items-center">
-        <a className="flex flex-row justify-start gap-2 " href="/Search">
+        <a
+          className="flex flex-row justify-start gap-2 hover:underline hover:origin-left "
+          href="/Search"
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className="w-5 h-5"
@@ -37,10 +43,10 @@ const Navbar = (props: Props) => {
               clipRule="evenodd"
             />
           </svg>
-          <p>Search</p>
+          <p>SEARCH</p>
         </a>
       </div>
-      <div className="flex flex-row items-center justify-start gap-2">
+      <div className="flex flex-row items-center justify-start gap-2 hover:underline hover:origin-left ">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           className="w-5 h-5"
@@ -53,9 +59,9 @@ const Navbar = (props: Props) => {
             clipRule="evenodd"
           />
         </svg>
-        <p>Watchlist</p>
+        <p>WATCHLIST</p>
       </div>
-      <div className="flex flex-row items-center justify-start gap-2">
+      <div className="flex flex-row items-center justify-start gap-2 hover:underline hover:origin-left ">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           className="w-5 h-5"
@@ -64,9 +70,9 @@ const Navbar = (props: Props) => {
         >
           <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
         </svg>
-        <p>Originals</p>
+        <p>ORIGINALS</p>
       </div>
-      <div className="flex flex-row items-center justify-start gap-2">
+      <div className="flex flex-row items-center justify-start gap-2 hover:underline hover:origin-left">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           className="w-5 h-5"
@@ -79,9 +85,9 @@ const Navbar = (props: Props) => {
             clipRule="evenodd"
           />
         </svg>
-        <p>Movies</p>
+        <p>MOVIES</p>
       </div>
-      <div className="flex flex-row items-center justify-start gap-2">
+      <div className="flex flex-row items-center justify-start gap-2 hover:underline hover:origin-left ">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           className="w-6 h-6"
@@ -96,9 +102,9 @@ const Navbar = (props: Props) => {
             d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
           />
         </svg>
-        <p>Series</p>
+        <p>SERIES</p>
       </div>
-      <div className="flex flex-row items-center justify-end gap-2">
+      <div className="flex flex-row items-center justify-end gap-2 hover:underline hover:origin-left ">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           className="w-5 h-5"
@@ -111,7 +117,7 @@ const Navbar = (props: Props) => {
             clipRule="evenodd"
           />
         </svg>
-        <p>User</p>
+        <p>USER</p>
       </div>
     </nav>
   );
