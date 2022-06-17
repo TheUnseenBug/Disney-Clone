@@ -1,22 +1,20 @@
 import React from "react";
 import Image from "next/image";
-import disneyLogo from "./images/toppng.com-disney-logo-800x434.png";
+import disneyLogo from "./images/PngItem_291927.png";
 
 type Props = {};
 
-// const style:string = {"flex justify-center flex-row gap-3 "}
-
 const Navbar = (props: Props) => {
   return (
-    <div className="w-full flex justify-center align-center bg-neutral-900 text-white px-4 gap-6 h-20">
-      <a className="w-200" href="/">
+    <nav className="fixed flex w-full h-20 gap-6 px-4 text-white align-center bg-neutral-900 ">
+      <a className="flex w-200 align-start" href="/">
         <Image src={disneyLogo} alt="disney+ logo" width="100%" />
       </a>
-      <div className="flex items-center">
-        <a className="flex justify-center flex-row gap-3  " href="/Home">
+      <div className="flex items-center ">
+        <a className="flex flex-row justify-start gap-3 " href="/Home">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="h-5 w-5"
+            className="w-5 h-5"
             viewBox="0 0 20 20"
             fill="currentColor"
           >
@@ -26,10 +24,10 @@ const Navbar = (props: Props) => {
         </a>
       </div>
       <div className="flex items-center">
-        <a className="flex justify-center flex-row gap-2 " href="/Search">
+        <a className="flex flex-row justify-start gap-2 " href="/Search">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="h-5 w-5"
+            className="w-5 h-5"
             viewBox="0 0 20 20"
             fill="currentColor"
           >
@@ -42,10 +40,10 @@ const Navbar = (props: Props) => {
           <p>Search</p>
         </a>
       </div>
-      <div className="flex justify-center flex-row gap-2 items-center">
+      <div className="flex flex-row items-center justify-start gap-2">
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          className="h-5 w-5"
+          className="w-5 h-5"
           viewBox="0 0 20 20"
           fill="currentColor"
         >
@@ -57,10 +55,10 @@ const Navbar = (props: Props) => {
         </svg>
         <p>Watchlist</p>
       </div>
-      <div className="flex justify-center flex-row gap-2 items-center">
+      <div className="flex flex-row items-center justify-start gap-2">
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          className="h-5 w-5"
+          className="w-5 h-5"
           viewBox="0 0 20 20"
           fill="currentColor"
         >
@@ -68,10 +66,10 @@ const Navbar = (props: Props) => {
         </svg>
         <p>Originals</p>
       </div>
-      <div className="flex justify-center flex-row gap-2 items-center">
+      <div className="flex flex-row items-center justify-start gap-2">
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          className="h-5 w-5"
+          className="w-5 h-5"
           viewBox="0 0 20 20"
           fill="currentColor"
         >
@@ -83,10 +81,10 @@ const Navbar = (props: Props) => {
         </svg>
         <p>Movies</p>
       </div>
-      <div className="flex justify-center flex-row gap-2 items-center">
+      <div className="flex flex-row items-center justify-start gap-2">
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          className="h-6 w-6"
+          className="w-6 h-6"
           fill="none"
           viewBox="0 0 24 24"
           stroke="currentColor"
@@ -100,10 +98,10 @@ const Navbar = (props: Props) => {
         </svg>
         <p>Series</p>
       </div>
-      <div className="flex justify-center flex-row gap-2 items-center">
+      <div className="flex flex-row items-center justify-end gap-2">
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          className="h-5 w-5"
+          className="w-5 h-5"
           viewBox="0 0 20 20"
           fill="currentColor"
         >
@@ -115,7 +113,7 @@ const Navbar = (props: Props) => {
         </svg>
         <p>User</p>
       </div>
-    </div>
+    </nav>
   );
 };
 
